@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="id">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Halo</title>
+  <style>
+    /* Biar tampilannya rapi di tengah layar */
+    html,body { height:100%; margin:0; font-family: Arial, sans-serif; }
+    .center {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100%;
+      background:#f7f7f7;
+    }
+    h1 { font-size:48px; color:#222; margin:0; }
+  </style>
 </head>
 <body>
-  <h1>halo</h1>
+  <div class="center">
+    <!-- Teks akan diisi oleh JavaScript -->
+    <h1 id="greeting"></h1>
+  </div>
+
+  <script>
+    // JavaScript sederhana yang menaruh kata "halo" ke elemen h1
+    const el = document.getElementById('greeting');
+    el.textContent = 'halo';
+  </script>
 </body>
 </html>
+
